@@ -15,16 +15,12 @@ class formula():
     def MarrageElegibility():
         Gender=input("Enter Gender")
         Age=int(input("Enter the Age:"))
-        if Gender == 'male':
-            if Age>=21:
-                print("Elegible")
-            else:
-                print("Not elegible")
-        
-        elif Age>=18:
+        if Gender == 'male' and Age >=21:
+            print("Elegible")
+        elif Gender == 'female' and Age >=18:
             print("Elegible")
         else:
-            print("Not eligible")   
+            print("Not elegible")    
 
     def percentages():
         tamil=int(input("Enter tamil mark:"))
